@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stylish Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="login-btn">Login</button>
+<button id="logout-btn" style="display:none;">Logout</button>
+<div id="login-modal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="login-close" class="close">&times;</span>
+    <h2>Login</h2>
+    <input type="text" id="login-username" placeholder="Username" />
+    <input type="password" id="login-password" placeholder="Password" />
+    <button id="login-submit">Login</button>
+  </div>
+</div>
+
+  <header>
+  <div class="header-left">
+    <a href="#about" class="about-btn">About</a>
+  </div>
+  <h1>🛍️ My Store</h1>
+  <div class="cart-icon">🛒 (<span id="cart-count">0</span>)</div>
+</header>
+
+  <main>
+    <section id="product-list"></section>
+  </main>
+<section id="about">
+  <h2>About This Website</h2>
+  <p>
+    Welcome to <strong>Stylish E-Commerce</strong> – your one-stop shop for trendy, affordable clothing and accessories.
+    Our mission is to deliver top-quality fashion to your doorstep with simplicity and speed.
+    Enjoy great discounts and a smooth shopping experience. Thank you for visiting!
+  </p>
+</section>
+  <aside class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button id="clear-cart" class="clear-cart-btn">🗑️ Clear Cart</button>
+    <button id="buy-now" class="buy-now-btn">✅ Buy Now</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html
